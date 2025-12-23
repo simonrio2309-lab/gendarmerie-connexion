@@ -12,6 +12,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+}
+
+/* En-tête avec les deux images alignées */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header-left img, .header-right img {
+    width: 100px; /* Ajuste la taille des logos */
+    height: auto;
 }
 
 /* Conteneur du formulaire de connexion */
