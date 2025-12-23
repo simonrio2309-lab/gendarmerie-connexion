@@ -8,37 +8,46 @@
 </head>
 <body>
 
-    <!-- En-tête avec les deux images -->
+    <!-- En-tête -->
     <header>
         <div class="header-left">
-            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/02/Logo_du_Minist%C3%A8re_de_l%27Int%C3%A9rieur_%282020%29.svg/1200px-Logo_du_Minist%C3%A8re_de_l%27Int%C3%A9rieur_%282020%29.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/02/Logo_du_Minist%C3%A8re_de_l%27Int%C3%A9rieur_%282020%29.svg/1200px-Logo_du_Minist%C3%A8re_de_l%27Int%C3%A9rieur_%282020%29.svg.png" alt="Ministère de l’Intérieur">
         </div>
         <div class="header-right">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Gendarmerie_nationale_logo.svg/1192px-Gendarmerie_nationale_logo.svg.png" alt="Logo Gendarmerie Nationale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Gendarmerie_nationale_logo.svg/1192px-Gendarmerie_nationale_logo.svg.png" alt="Gendarmerie Nationale">
         </div>
     </header>
 
-    <!-- Formulaire de connexion -->
+    <!-- Connexion -->
     <div class="login-container">
         <h2>Connexion au Genesis de la Gendarmerie</h2>
+
         <form id="loginForm">
             <div class="input-group">
                 <label for="username">Identifiant :</label>
-                <input type="text" id="username" required>
+                <input type="text" id="username" placeholder="Ex : NIGEND" required>
             </div>
+
             <div class="input-group">
                 <label for="password">Mot de passe :</label>
                 <input type="password" id="password" required>
             </div>
-            <button type="submit">Ouvrir la Session</button>
+
+            <!-- Message retour script -->
+            <p id="loginMessage" style="color:#b00020; font-size:13px; display:none;"></p>
+
+            <button type="submit">Ouvrir la session</button>
         </form>
     </div>
 
+    <!-- Script Google Sheets -->
     <script src="script.js"></script>
 
+    <!-- Mentions légales -->
     <footer class="legal-footer">
-    © AUCUNE VALEUR OFFICIELLE – TOUTE REPRODUCTION EST INTERDITE<br>
-    DROITS RÉSERVÉS À SIMON LAMBERT
-</footer>
+        © AUCUNE VALEUR OFFICIELLE – TOUTE REPRODUCTION EST INTERDITE<br>
+        DROITS RÉSERVÉS À SIMON LAMBERT
+    </footer>
+
 </body>
 </html>
