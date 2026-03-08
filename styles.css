@@ -32,7 +32,7 @@ header {
 /* Logos */
 .header-left img,
 .header-right img {
-    height: 80px;
+    height: 85px;
     width: auto;
 }
 
@@ -134,3 +134,4 @@ footer {
     line-height: 1.4;
     pointer-events: none; /* évite toute interaction */
 }
+
